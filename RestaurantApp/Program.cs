@@ -24,6 +24,11 @@ namespace RestaurantApp
             {
                 Console.WriteLine($"{item.UID}. {item._name} ({item._type}) - Rating: {item._score}");
             }
+            var amount = restaurants.Count();
+            var avg = restaurants.Average(x => x._score);
+            Console.WriteLine($"Total is {amount}");
+            Console.WriteLine($"Average is {amount} ({avg})");
+
             
         }
     }
